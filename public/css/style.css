@@ -1,0 +1,102 @@
+body {
+  padding-top: 50px;
+}
+.navbar-fixed-top {
+  border: 0;
+}
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav > li {
+  background-color: buttontext;
+  display: block;
+  position: relative;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #FFF;
+  color: #222;
+  font-size:16px;
+  border-bottom: 1px solid #ddd;
+}
+.nav-sidebar > li.active  {
+  color: #fff;
+  background-color: #428bca;
+}
+.nav-sidebar > li.active > a {
+  background-color: #2980b9;
+  color: #fff;
+}
+.nav-sidebar > li.active > a > .user_city{
+  color: #CACACA;
+}
+.user_city{
+  font-size: 12px;
+  color: #1F1818;
+  margin-top: 2px;
+}
+
+.all-msgs{
+  border: 1px solid #7C7C7C;
+  min-height: 350px;
+  overflow-y: auto;
+  font-size: 14px;
+  color : #b3b3b3;
+}
+.all-msgs .msg{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.msg .name{
+  display: inline-block;
+  width: 80px;
+  color: #2980b9;
+  vertical-align: top;
+}
+.msg .text{
+  display: inline-block;
+  width: 90%;
+  vertical-align: top;
+  color: #000;
+}
+.message-box{
+  width: 80%;
+  margin: 20px 0px;
+  display: inline-block;
+  float: left;
+  resize: none;
+  outline: none;
+}
+.join-chat{
+  display: inline-block;
+  top: 0;
+  float: left;
+  margin: 25px 20px;
+}
+
+.status_text {
+    color: #8B8B8B;
+    font-size: 12px;
+    font-weight: bold;
+}
